@@ -1,4 +1,4 @@
-package com.arraylist;
+package sortArrayList;
 
 import java.util.ArrayList;
 import java.util.Collections;
