@@ -1,0 +1,13 @@
+package listToArray;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Example {
+	
+	public static void main(String args[]) {
+		List<Integer> source = Arrays.asList(1,2,3,4,5);
+		Integer targetArray[] = source.toArray(new Integer[0]);
+	}
+
+}
