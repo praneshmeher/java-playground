@@ -10,7 +10,6 @@ public class Example {
 				str1=str1+str.charAt(i);
 		}
 		System.out.println(str1);
-
 	}
 
 }
