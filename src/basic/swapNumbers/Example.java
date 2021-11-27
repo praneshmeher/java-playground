@@ -1,4 +1,4 @@
-package swapNumbers;
+package basic.swapNumbers;
 
 public class Example {
 

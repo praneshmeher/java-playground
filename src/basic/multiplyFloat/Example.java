@@ -1,4 +1,4 @@
-package multiplyFloat;
+package basic.multiplyFloat;
 
 public class Example {
 

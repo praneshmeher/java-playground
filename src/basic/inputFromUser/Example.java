@@ -1,4 +1,4 @@
-package inputFromUser;
+package basic.inputFromUser;
 
 import java.io.BufferedReader;
 import java.io.IOException;

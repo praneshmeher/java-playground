@@ -1,4 +1,4 @@
-package readAndPrint;
+package basic.readAndPrint;
 
 import java.util.Scanner;
 
