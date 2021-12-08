@@ -1,28 +1,17 @@
 package playground;
 
-public class Playground {
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
-	{
-        System.out.println("init");
-    }
-	Playground()
-    {
-        System.out.println("default");
-    }
-	Playground(int x)
-    {
-        System.out.println(x);
-    }
- 
-    // block to be executed after the first block
-    // which has been defined above.
-    {
-        System.out.println("second");
-    }
-    public static void main(String args[])
-    {
-        new Playground();
-        new Playground(10); 
-    }
-
+public class Playground   {
+	
+	
+	 public static void main(String args[]){
+		
+	 }
 }
+
