@@ -21,6 +21,13 @@ public class Sorted {
 		List<Employee> listWithIdSort = list.stream().sorted().collect(Collectors.toList());
 		System.out.println(listWithIdSort);
 		
+		List<Employee> listWithNameSort = list.stream().sorted(new Comparator<Employee>() {
+			public int compare(Employee o1, Employee o2) {
+				return o1.getName().compareTo(o2.getName());
+			}
+		}).collect(Collectors.toList());
+		System.out.println(listWithNameSort);
+		
 		List<Employee> listWithOddId = list.stream().filter(e->(e.getId()%2)!=0).collect(Collectors.toList());
 		System.out.println(listWithOddId);
 		
@@ -30,13 +37,7 @@ public class Sorted {
 		Optional<Integer> listWithIdAvg = list.stream().map(e->e.getId()).reduce((sum, id)->sum=sum+id);
 		System.out.println(listWithIdAvg.get());
 		
-		List<Employee> listWithNameSort = list.stream().sorted(new Comparator<Employee>() {
-			public int compare(Employee o1, Employee o2) {
-				return o1.getName().compareTo(o2.getName());
-			}
-			
-		}).collect(Collectors.toList());
-		System.out.println(listWithNameSort);
+		
 
 	}
 
