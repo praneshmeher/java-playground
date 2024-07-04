@@ -1,4 +1,4 @@
-package playground;
+package design;
 
 class Phone{
 	private String name;

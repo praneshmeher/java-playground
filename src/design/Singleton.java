@@ -1,4 +1,4 @@
-package playground;
+package design;
 
 //public class Singleton {
 //	

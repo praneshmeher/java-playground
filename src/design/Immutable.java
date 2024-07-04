@@ -1,4 +1,4 @@
-package playground;
+package design;
 
 final class Immutable {
 	

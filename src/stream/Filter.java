@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 import utility.Employee;
 
-public class Sorted {
+public class Filter {
 
 	public static void main(String[] args) {
 		
@@ -19,11 +19,11 @@ public class Sorted {
 		}
 		System.out.println(list);
 		
-		List<Employee> listWithIdSort = list.stream().sorted().collect(Collectors.toList());
-		System.out.println(listWithIdSort);
+		List<Employee> listWithOddId = list.stream().filter(e->e.getId()%2==0).collect(Collectors.toList());
+		System.out.println(listWithOddId);
 		
-		List<Employee> listWithNameSort = list.stream().sorted((e1,e2)->e1.getName().compareTo(e2.getName())).collect(Collectors.toList());
-		System.out.println(listWithNameSort);
+		Employee emp = list.stream().filter(e->e.getId()==10).findFirst().get();
+		System.out.println(emp);
 		
 	}
 

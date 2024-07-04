@@ -1,14 +1,13 @@
 package stream;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
 import utility.Employee;
 
-public class Sorted {
+public class Reduce {
 
 	public static void main(String[] args) {
 		
@@ -19,12 +18,9 @@ public class Sorted {
 		}
 		System.out.println(list);
 		
-		List<Employee> listWithIdSort = list.stream().sorted().collect(Collectors.toList());
-		System.out.println(listWithIdSort);
-		
-		List<Employee> listWithNameSort = list.stream().sorted((e1,e2)->e1.getName().compareTo(e2.getName())).collect(Collectors.toList());
-		System.out.println(listWithNameSort);
-		
+		int ans = list.stream().map(e->e.getId()).reduce(10,(sum, id)->sum=sum+id);
+		System.out.println(ans);
+
 	}
 
 }
