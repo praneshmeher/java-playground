@@ -16,6 +16,9 @@ public class CharCount {
 				map.put(s.charAt(i), 1);
 			}
 		}
+		
 		System.out.println(map);
+	
 	}
+
 }

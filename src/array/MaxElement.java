@@ -1,13 +1,15 @@
 package array;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Optional;
 
 public class MaxElement {
 	
-    public static int majorityElement(int[] nums) {
+    public static int majorityElement(Integer[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
         for(int num:nums){
             if(map.containsKey(num)){
@@ -20,8 +22,11 @@ public class MaxElement {
     }
 
 	public static void main(String[] args) {
-		int arr[] = {1,2,3,4,5,5};
+		Integer arr[] = {1,2,3,4,5,5};
 		System.out.println(MaxElement.majorityElement(arr));
+		
+		Integer i = Arrays.asList(arr).stream().max((k1,k2)->k1.compareTo(k2)).get();
+		System.out.println(i);
 	}
 
 }
